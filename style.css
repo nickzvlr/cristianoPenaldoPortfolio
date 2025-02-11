@@ -132,22 +132,52 @@ img {
   margin-top: auto;
 }
 
-@media (max-width: 1270px) {
-  .cabecalho {
-    padding: 3% 0% 3% 0%;
+/* Ajustes apenas para mobile */
+@media (max-width: 1480px) {
+  .cabecalho-menu {
+    padding: 1.5rem; /* Reduz o padding para telas menores */
+    justify-content: center; /* Centraliza os links */
+    gap: 1.5rem; /* Reduz o espaçamento entre os links */
   }
 
-  .cabecalho-menu {
-    justify-content: center;
-    gap: 4rem;
+  .cabecalho-menu-link {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte dos links */
   }
 
   .apresentacao {
-    flex-direction: column-reverse;
-    padding: 5%;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    padding: 5%; /* Reduz o padding */
+    gap: 2rem; /* Reduz o espaçamento entre os elementos */
   }
 
   .apresentacao-conteudo {
-    width: auto;
+    width: 100%; /* Faz o conteúdo ocupar toda a largura */
+    text-align: center; /* Centraliza o texto */
+    order: 2; /* Coloca o texto na segunda posição */
+  }
+
+  .apresentacao-imagem {
+    width: 80%; /* Ajusta a largura da imagem */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    order: 1; /* Coloca a imagem na primeira posição */
+    margin-bottom: 1.5rem; /* Adiciona um espaçamento abaixo da imagem */
+  }
+
+  .apresentacao-conteudo-titulo {
+    font-size: 1.8rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .apresentacao-conteudo-texto {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte do texto */
+  }
+
+  .apresentacao-links-subtitulo {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte do subtítulo */
+  }
+
+  .apresentacao-links-botoes {
+    width: 80%; /* Ajusta a largura dos botões */
+    font-size: 1rem; /* Reduz o tamanho da fonte dos botões */
+    padding: 1rem; /* Ajusta o padding dos botões */
   }
 }
